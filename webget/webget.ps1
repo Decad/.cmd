@@ -1,3 +1,6 @@
+#
+# Author: Declan Cook
+#
 $uri = [System.Uri]$args[0]
 
 $wc=new-object net.webclient
