@@ -2,5 +2,5 @@ e.=explorer .
 gl=git log --oneline --all --graph --decorate  $*
 ls=ls --color $*
 pwd=cd
-slime="C:\Program Files\Sublime Text 2\SUBLIME_TEXT.EXE" -a .where
+slime="C:\Program Files\Sublime Text 2\SUBLIME_TEXT.EXE" -a .
 ~=pushd "%USERPROFILE%"
