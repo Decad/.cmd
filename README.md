@@ -8,7 +8,7 @@ This is public repo for my collection of useful .cmd, .batch and .ps1 files for 
 
 A wget clone leveraging powershell to do the heavy lifting.
 
-### Useage
+### Usage
 
 `webget http://example.com/install.msi`
 
@@ -16,13 +16,29 @@ A wget clone leveraging powershell to do the heavy lifting.
 
 Measure a commands execution time
 
-### Useage
+### Usage
 
 `timecmd <command>`
 
+
+##forfile
+
+A shorthand for windows for command when you need to run a command on every file in a directory. Expects the commands to execpt the file as the last parameter.
+
+### Usage
+
+`forfile <path> <comand>`
+
+### example
+
+Run all the sql scripts in a directory
+
+`forfile c:\scripts\*.sql sqlcmd -S myServer\instanceName -i`
+
+
 # Aliases
 
-Aliases are injected into my console by running `doskey /macrofile="path/to/aliasesfile` to automatically run this command I use the Autorun registry key found at `HKEY_CURRENT_USER\Software\Microsoft\Command Processor`.
+Aliases are injected into my console by running `doskey /macrofile="path/to/aliasesfile` to automatically run this command I use the Autorun registry key found at `HKEY_CURRENT_USER\Software\Microsoft\Command Processor`. See (this blog post)[http://www.declancook.com/aliases-in-windows-command-prompt/] for more details.
 
 
 # Contribute
