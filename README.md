@@ -38,7 +38,7 @@ Run all the sql scripts in a directory
 
 # Aliases
 
-Aliases are injected into my console by running `doskey /macrofile="path/to/aliasesfile` to automatically run this command I use the Autorun registry key found at `HKEY_CURRENT_USER\Software\Microsoft\Command Processor`. See (this blog post)[http://www.declancook.com/aliases-in-windows-command-prompt/] for more details.
+Aliases are injected into my console by running `doskey /macrofile="path/to/aliasesfile` to automatically run this command I use the Autorun registry key found at `HKEY_CURRENT_USER\Software\Microsoft\Command Processor`. See [this blog post](http://www.declancook.com/aliases-in-windows-command-prompt/) for more details.
 
 
 # Contribute
