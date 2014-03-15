@@ -23,7 +23,7 @@ Measure a commands execution time
 
 ##forfile
 
-A shorthand for windows for command when you need to run a command on every file in a directory. Expects the commands to execpt the file as the last parameter.
+A shorthand for windows `for` command when you need to run a command on every file in a directory. Expects the commands to accept the file as the last parameter of the command.
 
 ### Usage
 
