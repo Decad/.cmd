@@ -1,4 +1,4 @@
 #
 # Author: Declan Cook
 #
-@powershell -NoProfile -ExecutionPolicy unrestricted -File webget/webget.ps1 %1
+@powershell -NoProfile -ExecutionPolicy unrestricted -File %USERPROFILE%/.cmd/webget/webget.ps1 %*
