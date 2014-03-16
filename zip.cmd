@@ -27,7 +27,7 @@ FOR %%a in (%files%) DO (
     xcopy /S %%~a %temp%\zip%rnd% /Y > nul
 )
 
-CScript //NoLogo %USERPROFILE%/.cmd/zip/zip.vbs %temp%\zip%rnd% %temp%\zip%rnd%.zip
+CScript //NoLogo %USERPROFILE%\.cmd\zip\zip.vbs %temp%\zip%rnd% %temp%\zip%rnd%.zip
 
 rmdir /s /q %temp%\zip%rnd%
 
