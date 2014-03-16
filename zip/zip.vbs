@@ -3,9 +3,10 @@
 '
 '
 'Get command-line arguments.
-Set objArgs = WScript.Arguments
-InputFolder = objArgs(0)
-ZipFile = objArgs(1)
+
+Set fso = CreateObject("Scripting.FileSystemObject")
+InputFolder = fso.GetAbsolutePathName(WScript.Arguments.Item(0))
+ZipFile = WScript.Arguments.Item(1)
 
 'Create empty ZIP file.
 CreateObject("Scripting.FileSystemObject").CreateTextFile(ZipFile, True).Write "PK" & Chr(5) & Chr(6) & String(18, vbNullChar)
@@ -14,9 +15,9 @@ Set objShell = CreateObject("Shell.Application")
 
 Set source = objShell.NameSpace(InputFolder).Items
 
-objShell.NameSpace(ZipFile).CopyHere(source)
+objShell.NameSpace( ZipFile ).CopyHere(source)
 
 'Keep script waiting until compression is done
-Do Until objShell.NameSpace( ZipFile ).Items.Count = objShell.NameSpace( InputFolder ).Items.Count
+Do Until objShell.NameSpace( ZipFile ).Items.Count = objShell.NameSpace(InputFolder).Items.Count
     WScript.Sleep 200
 Loop
